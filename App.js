@@ -43,7 +43,7 @@ export default function App() {
       case 'DEL':
         setCurrentNumber(currentNumber.substring(0, (currentNumber.length - 1)))
         return
-      case 'EXCLUIR': // Limpa todo o conteúdo
+      case 'LIMPAR': // Limpa todo o conteúdo
         setLastNumber("") 
         setCurrentNumber("") 
         return
@@ -90,6 +90,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: '#7820c9'
   },
   results: {
     flex: 2,
@@ -114,7 +115,7 @@ const styles = StyleSheet.create({
     flexWrap: 'wrap',
   },
   button: {
-    backgroundColor: 'white',
+    backgroundColor: '#7820c9',
     alignItems: 'center',
     justifyContent: 'center',
     minWidth: 90, 
